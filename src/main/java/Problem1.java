@@ -1,5 +1,5 @@
 public class Problem1 {
-    //submission 2
+    //homework submission
     // Do not change signature (function name, parameters)
     public static int binarySearch(int[] data, int target) {
         int answer = -1;
