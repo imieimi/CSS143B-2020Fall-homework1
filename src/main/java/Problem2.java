@@ -1,5 +1,5 @@
 public class Problem2 {
-    //for submission
+    //submission
 
     // Do not change signature (function name, parameters)
     public static void bubbleSort(int[] data) {
