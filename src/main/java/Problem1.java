@@ -2,8 +2,15 @@ public class Problem1 {
 
     // Do not change signature (function name, parameters)
     public static int binarySearch(int[] data, int target) {
-        // Add your solution
-        //test commit 1
-        return -1; // Place holder
+        int answer = -1;
+        for(int i = 0; i < data.length; i++){
+            if(data[i] == target){
+                answer = i;
+                break;
+            }
+        }
+        return answer;
     }
+
+
 }
