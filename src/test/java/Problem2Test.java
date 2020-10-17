@@ -8,17 +8,32 @@ public class Problem2Test {
     // Okay to change
     @Test
     public void testBubbleSort() {
-        //This was a placeholder
         //assertTrue(false);
         // add your tests here
-        int[] testOne = {4, 5, 6};
-        Problem2.bubbleSort(testOne);
-        System.out.println();
-        int[] testTwo = {5, 7, 2, 4, 9};
-        Problem2.bubbleSort(testTwo);
-        System.out.println();
-        int[] testThree = {3, 4, 3, 3, 2, 6};
-        Problem2.bubbleSort(testThree);
+        int inputs[][] = {
+                {},
+                {1},
+                {2, 1},
+                {3, 1, 2},
+                {4, 2, 1, 3},
+                {1, 5, 4, 2, 3},
+                {4, 1, 3, 2, 6, 5}
+        };
+        int answers[][] = {
+                {},
+                {1},
+                {1, 2},
+                {1, 2, 3},
+                {1, 2, 3, 4},
+                {1, 2, 3, 4, 5},
+                {1, 2, 3, 4, 5, 6}
+        };
 
+        for(int i = 0; i < inputs.length; i++) {
+            int[] currentArray = inputs[i];
+            int[] currentExpected = answers[i];
+            Problem2.bubbleSort(currentArray);
+                assertArrayEquals(currentExpected, currentArray);
+        }
     }
 }
