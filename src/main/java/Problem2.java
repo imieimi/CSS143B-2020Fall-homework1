@@ -4,10 +4,10 @@ public class Problem2 {
     // Do not change signature (function name, parameters)
     public static void bubbleSort(int[] data) {
         // Add your solution
-        int one = data.length;
-        int two = data.length - 1;
-            for(int i = 0; i < two; i++){
-                for(int a = 0; a < one - i - 1; a++){
+        int length = data.length;
+        int count = data.length - 1;
+            for(int i = 0; i < count; i++){
+                for(int a = 0; a < length - i - 1; a++){
                     if(data[a] > data[a+1]){
                         int swap = data[a];
                         data[a] = data[a+1];
@@ -15,7 +15,7 @@ public class Problem2 {
                     }
                 }
             }
-            for(int i = 0; i < one; i++){
+            for(int i = 0; i < length; i++){
                 System.out.print(data[i] + " ");
             }
         }
